@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+}
+
+.todo-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.form-input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #dfe4ed;
+  border-radius: 13px;
+  color: #202a3c;
+  background: #f8f9fc;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.form-input::placeholder {
+  color: #9aa3b3;
+}
+
+.form-input:hover {
+  border-color: #c9c3ff;
+}
+
+.form-input:focus {
+  border-color: #7868ff;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(109, 93, 252, 0.12);
+}
+
+.btn {
+  padding: 0 20px;
+  border: 0;
+  border-radius: 13px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7868ff, #5a4be7);
+  box-shadow: 0 8px 18px rgba(90, 75, 231, 0.22);
+  font-weight: 750;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    opacity 160ms ease;
+}
+
+.btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 11px 24px rgba(90, 75, 231, 0.3);
+}
+
+.btn:not(:disabled):active {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  box-shadow: none;
+}
+
+@media (max-width: 460px) {
+  .todo-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    min-height: 48px;
+  }
+}

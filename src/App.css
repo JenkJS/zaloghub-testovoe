@@ -1,0 +1,55 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 72px 20px;
+}
+
+.todo-card {
+  width: min(100%, 640px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 24px 70px rgba(30, 41, 59, 0.12),
+    0 2px 8px rgba(30, 41, 59, 0.05);
+  backdrop-filter: blur(18px);
+}
+
+.header {
+  padding: 36px 36px 28px;
+  border-bottom: 1px solid #e9edf5;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #6d5dfc;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 26px;
+  color: #172033;
+  font-size: clamp(30px, 6vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 24px 12px;
+  }
+
+  .todo-card {
+    border-radius: 22px;
+  }
+
+  .header {
+    padding: 28px 20px 22px;
+  }
+}
