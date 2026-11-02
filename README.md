@@ -2,6 +2,10 @@
 
 Тестовое задание на позицию Junior Frontend Developer: простой список задач на React и TypeScript.
 
+## Демо
+
+[TODO LIST](https://ТВОЙ_USERNAME.github.io/zaloghub-testovoe/)
+
 ## Возможности
 
 - добавление задач с проверкой пустого ввода;
